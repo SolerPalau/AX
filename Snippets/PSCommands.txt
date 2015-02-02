@@ -1,0 +1,7 @@
+-- VER TAMAÑO DE BLOQUE DE DISCOS
+	--PowerShell
+	wmic partition get blocksize, startingoffset, name, index
+
+-- VER ALINEACIÓN DE DISCOS
+	--PowerShell
+	fsutil fsinfo ntfsinfo [drive]:
